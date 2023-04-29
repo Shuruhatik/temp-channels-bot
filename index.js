@@ -1,6 +1,6 @@
 const { Client, MessageButton, MessageActionRow, MessageSelectMenu ,TextInputComponent,Modal} = require('discord.js');
 const config = require('./config.json');
-const Database = require("st.db")
+const { Database } = require("st.db")
 const temp_channels_db = new Database("./temp_channels.json");
 const client = new Client({
     intents: 32767
